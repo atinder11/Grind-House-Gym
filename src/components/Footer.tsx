@@ -34,7 +34,7 @@ function Footer() {
   </div>
   <nav>
     <h6 className="footer-title">Quick Link</h6>
-    <div className='grid grid-cols-1 md:grid-cols-3'>
+    <div className='grid grid-cols-1 '>
       <Link href="./" className="link link-hover">Home</Link>
     <Link href="/about" className="link link-hover">About us</Link>
     <Link href="/plan" className="link link-hover">Services</Link>
