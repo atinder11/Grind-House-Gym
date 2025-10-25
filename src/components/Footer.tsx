@@ -21,7 +21,7 @@ function Footer() {
       Providing reliable tech since 1992
     </p>
     < div >
-      <ul className='columns-3'>
+      <ul className='grid grid-cols-3 gap-2'>
         <li><Link href="https://www.linkedin.com/in/atinder-kumar/" target="_blank"><FaFacebookF  className='text-xl' /></Link></li>
          <li><Link href="https://www.linkedin.com/in/atinder-kumar/" target="_blank"><FaInstagram    className='text-xl'/></Link></li>
          <li><Link href="mailto:atinderk71@mail.com"><IoIosMail  className='text-xl'/></Link></li>
@@ -34,10 +34,14 @@ function Footer() {
   </div>
   <nav>
     <h6 className="footer-title">Quick Link</h6>
-    <Link href="./" className="link link-hover">Home</Link>
+    <div className='grid grid-cols-1 md:grid-cols-3'>
+      <Link href="./" className="link link-hover">Home</Link>
     <Link href="/about" className="link link-hover">About us</Link>
     <Link href="/plan" className="link link-hover">Services</Link>
     <Link href="/join" className="link link-hover">Contact</Link>
+
+    </div>
+    
   </nav>
  
  <nav>
