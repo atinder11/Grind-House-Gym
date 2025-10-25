@@ -3,8 +3,8 @@ import React from "react";
 function Stats() {
   return (
     <>
-      <div className=" w-full  mx-auto bg-black text-white">
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-6 text-center px-4 py-2 md:px-16">
+      <div className=" w-full  mx-auto text-white">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-6 text-center px-4 py-2 md:px-16  bg-stone-900 dark:bg-gray-1000">
           <div className="">
             <h2>5+</h2>
             <p>Years of Service</p>

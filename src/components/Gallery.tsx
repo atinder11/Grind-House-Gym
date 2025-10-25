@@ -27,7 +27,7 @@ const Gallery: React.FC = () => {
   }, [index])
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-base-200">
       <div className="p-2 mb-2">
         <h2 className="text-center font-bold text-5xl">Gallery</h2>
       </div>

@@ -31,12 +31,12 @@ const Page: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Contact Info */}
         <div>
-          <h2 className="text-4xl font-bold  border-white  pb-1 text-black text-center">
+          <h2 className="text-4xl font-bold  border-white  pb-1 text-black text-center dark:text-white">
             Contact Us
           </h2>
-          <ul className="space-y-5 text-black">
-            <li className="flex items-center gap-3">
-              <IoMdMailOpen className="text-2xl text-black" />
+          <ul className="space-y-5 text-black dark:text-white">
+            <li className="flex items-center gap-3 dark:text-white">
+              <IoMdMailOpen className="text-2xl text-black dark:text-white"  />
               <Link
                 href="mailto:atinderk71@mail.com"
                 className="hover:underline"
@@ -45,7 +45,7 @@ const Page: React.FC = () => {
               </Link>
             </li>
             <li className="flex items-center gap-3">
-              <FaPhoneAlt className="text-2xl text-black" />
+              <FaPhoneAlt className="text-2xl text-black dark:text-white" />
               <Link
                 href="tel:+919821023521"
                 className="hover:underline"
@@ -54,7 +54,7 @@ const Page: React.FC = () => {
               </Link>
             </li>
             <li className="flex items-center gap-3">
-              <FaLocationDot className="text-2xl text-black" />
+              <FaLocationDot className="text-2xl text-black dark:text-white" />
               <a
                 href="https://maps.app.goo.gl/26xZYFaNNoRok8FW6"
                 target="_blank"
@@ -78,7 +78,7 @@ const Page: React.FC = () => {
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
               />
             </div>
             <div>
@@ -86,7 +86,7 @@ const Page: React.FC = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
               />
             </div>
             <div>
@@ -94,7 +94,7 @@ const Page: React.FC = () => {
               <input
                 type="tel"
                 placeholder="Enter your phone number"
-                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-black"
               />
             </div>
             <div>
@@ -102,7 +102,7 @@ const Page: React.FC = () => {
               <textarea
                 placeholder="Describe your goal..."
                 rows={4}
-                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black resize-none"
+                className="w-full border border-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black  resize-none"
               ></textarea>
             </div>
             <button

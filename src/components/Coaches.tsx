@@ -7,7 +7,7 @@ function Coaches() {
   return (
     <>
       <div className="p-2">
-        <p className=" text-center text-gray-700 text-md font-semibold">
+        <p className=" text-center text-gray-700 text-md font-semibold dark:text-white">
           Are You Looking for a Mentor?
         </p>
         <h2 className="text-5xl text-center font-bold mb-3">Coaches</h2>
