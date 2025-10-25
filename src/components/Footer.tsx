@@ -65,10 +65,10 @@ function Footer() {
 
   <section aria-label="Location Map">
       <h6 className="footer-title">Location</h6>
-      <div className="w-full aspect-video">
+      <div className="w-full aspect-video rounded-2xl">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9802606544063!2d77.3720932!3d28.630353699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce551491b3ce7%3A0x7335d9fcfd4d9db0!2sJAYPEE%20INSTITUTE%20OF%20INFORMATION%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1761070903833!5m2!1sen!2sin"
-          style={{ border: 2 }}
+          style={{ border: 2,borderRadius:"0.8rem" }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
