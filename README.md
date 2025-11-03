@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Grind House GYM
 
-## Getting Started
+Welcome to Grind House, where strength meets discipline and results speak louder than words. Founded in the heart of the USA, Grind House isn’t just a gym — it’s a community built for those who push their limits, embrace the grind, and never settle for average.
 
-First, run the development server:
+### Website link: https://grind-house-gym.vercel.app/
+
+## Screenshots
+## Home
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/452803b9-6839-43d9-bb46-2341ee00e3f8" />
+### About Us
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/c45663d5-1e6d-4f5f-bc6c-e177394702ae" />
+
+## Choose Us
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/2e5d8774-bac6-4ad2-a43a-b6bf20b7490e" />
+
+## Coaches
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/880e0d7e-d198-4c84-bc2a-cc983488f145" />
+
+## Gallery
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/7c6bd222-9dd4-453d-adb6-c586e9a0dedf" />
+
+## Plan
+<img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/c45d7022-735d-414a-8202-9ff023afa775" />
+
+## Testimonials
+<img width="1343" height="485" alt="image" src="https://github.com/user-attachments/assets/51b01182-a964-49bb-afbc-72d301c4a37f" />
+
+## Contact Us
+
+<img width="1365" height="1155" alt="image" src="https://github.com/user-attachments/assets/bc306be9-b18f-4742-bec7-bdadaa9c5458" />
+
+
+## Footer
+<img width="1332" height="563" alt="image" src="https://github.com/user-attachments/assets/8ae115ba-c0f1-4618-baa3-7983fbd78628" />
+
+
+
+## Tech Stack
+
+**Frontend:** Next JS, Tailwind CSS, Typescript, React JS, HTMl, CSS
+<br>
+**Backend:** Google Sheet
+<br>
+**Api:** Google Sheet
+
+
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/atinder11/Iron_Edge_Gym.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies in the respective directories
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+  yarn
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Run the application in  on your localhost
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  yarn run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+###
 
-## Deploy on Vercel
+## Authors
+- [Atinder Kumar](https://github.com/atinder11)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
