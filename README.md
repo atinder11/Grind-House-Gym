@@ -51,7 +51,7 @@ Welcome to Grind House, where strength meets discipline and results speak louder
 Clone the project
 
 ```bash
-  git clone https://github.com/atinder11/Iron_Edge_Gym.git
+  git clone https://github.com/atinder11/Grind-House-Gym.git
 ```
 
 Install dependencies in the respective directories
