@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import "aos/dist/aos.css";
+@theme{
+    --customDark:#1d232a;
+}
+html, body {
+  overflow-x: hidden;
+}
