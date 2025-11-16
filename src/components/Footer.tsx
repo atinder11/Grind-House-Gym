@@ -83,7 +83,7 @@ function Footer() {
 <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 "
 >
   <aside>
-    <p >< Link href="/" className='transition  ease-in-out hover:scale-110'>Copyright © {new Date().getFullYear()} - All right reserved by  The Grind House Gym </Link> </p>
+    <p >< Link href="/" className='transition  ease-in-out hover:scale-110 cursor-pointer'>Copyright © {new Date().getFullYear()} - All right reserved by  The Grind House Gym </Link> </p>
   </aside>
 </footer>
 

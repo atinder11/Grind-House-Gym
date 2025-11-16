@@ -12,9 +12,9 @@ import Image4 from "../assets/image4.jpg"
 export default function ChooseUs() {
   return (
     <>
-      <div>
-        <div className="p-2 bg-base-200">
-          <h2 className="text-center text-3xl font-bold"> Why Choose Us</h2>
+      <div className="bg-base-200">
+        <div className="container mx-auto p-4 ">
+          <h2 className="text-center text-3xl font-bold py-2"> Why Choose Us</h2>
           <p className="text-center text-xl text-bold text-gray-700 dark:text-white">
             Our approach goes beyond fitness
             <br />
