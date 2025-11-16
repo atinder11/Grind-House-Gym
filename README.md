@@ -7,6 +7,7 @@ Welcome to Grind House, where strength meets discipline and results speak louder
 ## Screenshots
 ## Home
 <img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/452803b9-6839-43d9-bb46-2341ee00e3f8" />
+
 ## About Us
 <img width="1366" height="599" alt="image" src="https://github.com/user-attachments/assets/c45663d5-1e6d-4f5f-bc6c-e177394702ae" />
 
