@@ -3,15 +3,12 @@ import React, { useState } from "react";
 import { IoMdMailOpen } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { IoCheckmarkCircle } from "react-icons/io5";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-// import { Sheet } from "lucide-react";
 
 const SHEET_WEBHOOK = process.env.NEXT_PUBLIC_SHEET_URL ?? "";
-
-
-  
 
 const Page: React.FC = () => {
   const [name, setName] = useState("");
@@ -19,29 +16,29 @@ const Page: React.FC = () => {
   const [phone, setPhone] = useState("");
   const [goal, setGoal] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    try {
-      await fetch(
-        SHEET_WEBHOOK,
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, phone, goal }),
-        }
-      );
 
-      alert("Form submitted successfully!");
+    try {
+      await fetch(SHEET_WEBHOOK, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, goal }),
+      });
+
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 3000);
+
       setName("");
       setEmail("");
       setPhone("");
       setGoal("");
     } catch (err) {
-      alert(" Network error, try again later!");
+      alert("Network error, try again later!");
     } finally {
       setLoading(false);
     }
@@ -50,6 +47,28 @@ const Page: React.FC = () => {
   return (
     <>
       <Navbar />
+
+      {/* Toast - Top Right */}
+      {showToast && (
+        <div className="fixed top-4 right-4 z-50 animate-[fadeIn_0.4s_ease-out,slideLeft_0.4s_ease-out]">
+          <div className="alert bg-green-600 text-white shadow-xl rounded-lg flex items-center gap-3 px-4 py-3">
+            <IoCheckmarkCircle className="text-2xl" />
+            <span>Form submitted successfully!</span>
+          </div>
+        </div>
+      )}
+
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0 }
+          to { opacity: 1 }
+        }
+        @keyframes slideLeft {
+          from { transform: translateX(40px) }
+          to { transform: translateX(0px) }
+        }
+      `}</style>
+
       <div className="px-4 py-2 text-white min-h-screen">
         <div className="w-full mb-10">
           <iframe
@@ -64,12 +83,12 @@ const Page: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div data-aos="fade-right">
-            <h2 className="text-4xl font-bold pb-1 text-black text-center dark:text-white transition  ease-in-out hover:scale-110">
+            <h2 className="text-4xl font-bold pb-1 text-black text-center dark:text-white transition ease-in-out hover:scale-110">
               Contact Us
             </h2>
             <ul className="space-y-5 text-black dark:text-white">
               <li className="flex items-center gap-3 ">
-                <IoMdMailOpen className="text-2xl transition  ease-in-out hover:scale-105"  />
+                <IoMdMailOpen className="text-2xl transition ease-in-out hover:scale-105" />
                 <Link
                   href="mailto:atinderk71@mail.com"
                   className="hover:underline"
@@ -78,13 +97,13 @@ const Page: React.FC = () => {
                 </Link>
               </li>
               <li className="flex items-center gap-3">
-                <FaPhoneAlt className="text-2xl transition  ease-in-out hover:scale-110" />
+                <FaPhoneAlt className="text-2xl transition ease-in-out hover:scale-110" />
                 <Link href="tel:+919821023521" className="hover:underline">
                   +91 98210 23521
                 </Link>
               </li>
               <li className="flex items-center gap-3">
-                <FaLocationDot className="text-2xl transition  ease-in-out hover:scale-110" />
+                <FaLocationDot className="text-2xl transition ease-in-out hover:scale-110" />
                 <a
                   href="https://maps.app.goo.gl/26xZYFaNNoRok8FW6"
                   target="_blank"
@@ -99,8 +118,11 @@ const Page: React.FC = () => {
             </ul>
           </div>
 
-          <div className="bg-white text-black rounded-2xl p-6 shadow-xl" data-aos="fade-left">
-            <h3 className="text-2xl font-semibold mb-5 text-center transition  ease-in-out hover:scale-110">
+          <div
+            className="bg-white text-black rounded-2xl p-6 shadow-xl"
+            data-aos="fade-left"
+          >
+            <h3 className="text-2xl font-semibold mb-5 text-center transition ease-in-out hover:scale-110">
               Join Now
             </h3>
             <form className="space-y-5" onSubmit={handleSubmit}>
@@ -153,15 +175,11 @@ const Page: React.FC = () => {
               >
                 {loading ? "Submitting..." : "Submit"}
               </button>
-              {message && (
-                <p className="text-center text-sm mt-2 text-gray-800">
-                  {message}
-                </p>
-              )}
             </form>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );

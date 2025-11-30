@@ -34,8 +34,8 @@ export default function ChooseUs() {
 
               <div >
                 <div className="flex items-center space-x-2">
-                  <FaDumbbell className="text-2xl" />
-                  <h3 className="text-xl font-semibold">State-of-the-Art Equipment</h3>
+                  <FaDumbbell className="text-5xl md:text-2xl" />
+                  <h3 className="text-xl font-semibold">State of the Art Equipment</h3>
                 </div>
                 <p className="mt-2 text-gray-700 dark:text-white">Train with premium machines and gear that ensure safe, effective, and result-driven workouts.</p>
               </div>
@@ -48,7 +48,7 @@ export default function ChooseUs() {
               </div>
              <div >
                 <div className="flex items-center space-x-2">
-                  <RiFocus2Fill  className="text-2xl" />
+                  <RiFocus2Fill  className="text-4xl md:text-2xl" />
                   <h3 className="text-xl font-semibold">Holistic Fitness Focus</h3>
                 </div>
                 <p className="mt-2 text-gray-700 dark:text-white">From strength and endurance to recovery and nutrition, we help you achieve complete physical and mental wellness</p>
