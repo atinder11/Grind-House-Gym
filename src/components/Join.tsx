@@ -3,12 +3,17 @@ import Link from "next/link";
 
 function Join() {
   return (
-    <div className="px-4 py-10">
-      <h2 className="text-center font-bold text-4xl md:text-5xl mb-8">Plans</h2>
+    <div className="container mx-auto px-4 py-10">
+      <h2 className="text-center font-bold text-4xl md:text-5xl mb-8">
+        Plans
+      </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {/* Monthly */}
-        <div className="card bg-base-200 shadow-sm w-full max-w-sm h-full flex flex-col justify-between transition  ease-in-out hover:scale-110" data-aos="fade-up">
+        <div
+          className="card bg-base-200 shadow-sm w-full max-w-sm h-full flex flex-col justify-between transition ease-in-out hover:scale-110"
+          data-aos="fade-up"
+        >
           <div className="card-body flex flex-col flex-grow">
             <div className="text-center">
               <h2 className="text-xl font-semibold">Monthly Plan</h2>
@@ -44,18 +49,21 @@ function Join() {
                 </li>
               ))}
             </ul>
-            <Link href="/join">
-            <button className="btn btn-neutral btn-block mt-6  p-2" >Subscribe</button>
-            </Link>
 
-            
+            <Link href="/join">
+              <button className="btn btn-neutral btn-block mt-6 p-2">
+                Subscribe
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* Quarterly */}
-        <div className="card bg-black text-white shadow-sm w-full max-w-sm h-full flex flex-col justify-between transition  ease-in-out hover:scale-110"
-        data-aos="fade-up">
-          <div className="card-body flex flex-col flex-grow" data-aos="fade-up">
+        <div
+          className="card bg-black text-white shadow-sm w-full max-w-sm h-full flex flex-col justify-between transition ease-in-out hover:scale-110"
+          data-aos="fade-up"
+        >
+          <div className="card-body flex flex-col flex-grow">
             <span className="badge badge-sm badge-warning text-white font-semibold self-center mb-2">
               Most Popular
             </span>
@@ -94,17 +102,20 @@ function Join() {
                 </li>
               ))}
             </ul>
-            <Link href="/join">
-            <button className="btn btn-outline btn-block mt-6  p-2">Subscribe</button>
-            </Link>
 
-            
+            <Link href="/join">
+              <button className="btn btn-outline btn-block mt-6 p-2">
+                Subscribe
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* Yearly */}
-        <div className="card bg-base-200 shadow-sm w-full max-w-sm h-full flex flex-col justify-between transition  ease-in-out hover:scale-110"
-        data-aos="fade-up">
+        <div
+          className="card bg-base-200 shadow-sm w-full max-w-sm h-full flex flex-col justify-between transition ease-in-out hover:scale-110"
+          data-aos="fade-up"
+        >
           <div className="card-body flex flex-col flex-grow">
             <div className="text-center">
               <h2 className="text-xl font-semibold">Yearly Plan</h2>
@@ -140,11 +151,12 @@ function Join() {
                 </li>
               ))}
             </ul>
-            <Link href="/join">
-             <button className="btn btn-neutral btn-block mt-6  p-2 ">Subscribe</button>
-            </Link>
 
-           
+            <Link href="/join">
+              <button className="btn btn-neutral btn-block mt-6 p-2">
+                Subscribe
+              </button>
+            </Link>
           </div>
         </div>
       </div>

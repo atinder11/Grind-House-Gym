@@ -15,7 +15,7 @@ function CallUs() {
         fill
         className="object-cover object-bottom -z-10"
         priority
-        quality={90}
+        // quality={90}
       />
 
       {/* Overlay */}
